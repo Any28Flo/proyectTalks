@@ -116,7 +116,7 @@ div.barra{
 }
 div.logo{
   width :80%;
-  display: inline-block;
+  float: left;
 }
 div.logo img{
   width: 100%;
@@ -129,7 +129,7 @@ div.logo img{
 }
 /*Nav principal*/
 nav.navegacion-principal{
-  display: none;
+  /*display: none;*/
 }
 nav.navegacion-principal a{
    font-family: 'Oswald', sans-serif;
@@ -138,6 +138,10 @@ nav.navegacion-principal a{
    text-transform: uppercase;
    text-decoration: none;
    transition: all .3s ease;
+   width: 100%;
+   display: block;
+   text-align: center;
+   margin-bottom: 20px;
 }
 nav.navegacion-principal a:hover{
   background-color: #fe4918;
@@ -157,8 +161,36 @@ nav.navegacion-principal a:last-child:hover{
     display: block;
   }
   nav.navegacion-principal a{
-    margin-right: 10px;
-    padding: 10px 20px;
+    padding: 10px 10px;
     display: inline-block;
+    width: auto;
+    display: inline;
+    text-align: center;
+    margin: 20 10px 0 0 ;
+  }
 }
+/*MENU MOVIL*/
+div.menu-movil{
+  width: 60px;
+  display: block;
+  float: right;
+  text-align: right;
+  margin-top: 12px;
+}
+div.menu-movil span{
+  height: 8px;
+  margin-bottom: 6px;
+  background-color: white;
+  display: block;
+}
+div.menu-movil:hover{
+  cursor: pointer;
+}
+@media only screen and (min-width: 768px) {
+  div.menu-movil{
+    display: none;
+  }
+}
+
+
 /*# sourceMappingURL=main.css.map */
