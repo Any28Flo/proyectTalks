@@ -5,12 +5,19 @@ $redSocial:2em;
 $zero: 0;
 $twentyFontn:20px;
 $itemEvento: #fe4918;
+$sizeNombreSitio : 5.9vw;
 html{
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+
 
 }
 *,*::before,*::after{
   box-sizing: inherit;
+}
+h2{
+  font-family: 'Oswald', sans-serif;
+
 }
 // HEADER
 .hero{
@@ -51,6 +58,7 @@ html{
     text-transform: uppercase;
     i{
       color:$itemEvento;
+      font-size: 2.4rem;
     }
   }
 }
@@ -61,4 +69,24 @@ html{
 .ciudad{
   float: right;
   text-align: right;
+}
+.nombre-sitio{
+    h1{
+      font-family: 'PT Sans', sans-serif;
+      font-size: $sizeNombreSitio;
+    }
+}
+.slogan{
+  text-transform: none!important;
+  span{
+    font-weight: bold;
+  }
+}
+@media only screen and (min-width:768px){
+  h1.nombre-sitio{
+    font-family: 'PT Sans', sans-serif;
+    font-size: $sizeNombreSitio;
+    margin-left: $zero;
+    line-height: 1;
+  }
 }
