@@ -6,6 +6,8 @@ $zero: 0;
 $twentyFontn:20px;
 $itemEvento: #fe4918;
 $sizeNombreSitio : 5.9vw;
+$sizeContenedor: 95%;
+$colorGris:#353535;
 html{
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
@@ -14,6 +16,27 @@ html{
 }
 *,*::before,*::after{
   box-sizing: inherit;
+}
+// GLOBALES
+.contenedor{
+  width: $sizeContenedor;
+  margin: $zero auto;
+}
+@media only screen and (min-width:480px){
+  .contenedor{
+    width: 95%;
+  }
+}
+@media only screen and (min-width:768px){
+  .contenedor{
+    width: 90%;
+  }
+}
+@media only screen and (min-width:992px){
+  .contenedor{
+    width: 90%;
+    max-width: 1100px;
+  }
 }
 h2{
   font-family: 'Oswald', sans-serif;
@@ -74,6 +97,7 @@ h2{
     h1{
       font-family: 'PT Sans', sans-serif;
       font-size: $sizeNombreSitio;
+      margin-top: 10rem;
     }
 }
 .slogan{
@@ -89,4 +113,8 @@ h2{
     margin-left: $zero;
     line-height: 1;
   }
+}
+// Barra
+.barra{
+  background-color:$colorGris;
 }
