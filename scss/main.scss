@@ -1,0 +1,64 @@
+$fullImage:100vh;
+$paddingHeader:40px;
+$blanco:#ffffff;
+$redSocial:2em;
+$zero: 0;
+$twentyFontn:20px;
+$itemEvento: #fe4918;
+html{
+  box-sizing: border-box;
+
+}
+*,*::before,*::after{
+  box-sizing: inherit;
+}
+// HEADER
+.hero{
+  background-image: url("../img/encabezado.jpg");
+  height: $fullImage;
+  background-position: top center;
+  background-size: cover;
+}
+.contenido-header{
+  padding-top: $paddingHeader;
+}
+  .redes-sociales{
+  text-align: center;
+  a{
+    color: $blanco;
+    font-size:  $redSocial;
+    margin-right: $twentyFontn;
+
+  }
+  a:last-child{
+    margin-right: 0;
+  }
+}
+@media only screen and (min-width:768px){
+  div.informacion-evento{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+}
+.informacion-evento{
+  text-align: center;
+  color: $blanco;
+  p{
+    margin: $zero;
+    display: inline;
+    font-size: $twentyFontn;
+    text-transform: uppercase;
+    i{
+      color:$itemEvento;
+    }
+  }
+}
+
+.fecha{
+  float: left;
+}
+.ciudad{
+  float: right;
+  text-align: right;
+}
