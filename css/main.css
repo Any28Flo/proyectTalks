@@ -36,7 +36,7 @@ html {
 .seccion p{
   font-size: 1.2em;
   text-align: center;
-  
+
 }
 h2{
   font-family: 'Oswald', sans-serif;
@@ -133,6 +133,11 @@ h1.nombre-sitio {
 div.barra{
   background-color: #353535;
   padding: 20px 0;
+}
+div.cont{
+  background-color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
 }
 div.logo{
   width :80%;
