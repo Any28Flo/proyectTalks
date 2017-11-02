@@ -40,10 +40,8 @@
                 </div>
                 <h1 class="nombre-sitio">GDLWEBCAMP</h1>
                 <p class="slogan">La mejor conferencia de <span>desarrollo web</span></p>
-
               </div><!-- información evento -->
-
-            </div>
+            </div><!-- contenido-header -->
           </div><!-- hero -->
         </header>
         <div class="barra">
@@ -51,11 +49,13 @@
             <div class="logo">
               <img src="img/logo.svg" alt="logo-tolucawebcamp">
             </div>
+
             <div class="menu-movil">
               <span></span>
               <span></span>
               <span></span>
             </div>
+
             <nav class="navegacion-principal">
               <a href="">Conferencia</a>
               <a href="">Calendario</a>
@@ -65,13 +65,14 @@
 
           </div><!-- contenedor -->
         </div><!-- barra -->
-        <div class="cont seccion">
+
+        <section class="seccion contenedor ">
           <h2>La mejor conferencia de diseño web en español</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus eius aspernatur praesentium quae adipisci est, deserunt quidem cum, esse rem aliquam quia distinctio veritatis itaque beatae accusantium illum ipsum nam!
-            </p>
-        </div><!-- seccion -->
-        <div class="programa">
+          </p>
+        </section><!-- seccion -->
+        <section class="programa">
           <div class="contenedor-video">
             <video autoplay loop poster="img/bg-talleres.jpg">
               <source src="video/video.mp4" type="video/mp4 ">
@@ -79,36 +80,36 @@
               <source src="video/video.ogv" type="video/ogv">
             </video>
           </div>
-        </div><!-- programa -->
-        <div class="contenido-programa">
-          <div class="contenedor">
-            <div class="programa-evento">
-              <h2>Programa del evento</h2>
-              <nav class="menu-programa">
-                <a href="#talleres" class="fa fa-code">Talleres</a>
-                <a href="#conferencias" class="fa fa-comment">Conferencias</a>
-                <a href="#seminarios" class="fa fa-university">Seminarios</a>
-              </nav>
+          <div class="contenido-programa">
+            <div class="contenedor">
+              <div class="programa-evento">
+                <h2>Programa del evento</h2>
+                <nav class="menu-programa">
+                  <a href="#talleres"><i class="fa fa-code" aria-hidden="true"></i>Talleres</a>
+                  <a href="#conferencias"><i class="fa fa-comment" aria-hidden="true"></i>Conferencias</a>
+                  <a href="#seminarios"><i class="fa fa-university" aria-hidden="true"></i>Seminarios</a>
+                </nav>
+
+                <div id="talleres" class="info-curso ocultar clearfix">
+                  <div class="detalle-evento">
+                    <h3>HTML5,CSS3 Y Javascript</h3>
+                    <p><i class="fa fa-clock-o" aria-hidden="true"></i>16:00 hrs</p>
+                    <p><i class="fa fa-calendar" aria-hidden="true"></i>2 de Noviembre</p>
+                    <p><i class="fa fa-user" aria-hidden="true"></i>Ilse Centeno</p>
+                  </div>
+                  <div class="detalle-evento">
+                    <h3>Responsive design</h3>
+                    <p><i class="fa fa-clock-o" aria-hidden="true"></i>20:00 hrs</p>
+                    <p><i class="fa fa-calendar" aria-hidden="true"></i>2 de Noviembre</p>
+                    <p><i class="fa fa-user" aria-hidden="true"></i>Montse Armas</p>
+                  </div>
+                  <a href="" class="button float-right">Ver todos</a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div id="talleres" class="info-curso ocultar clearfix">
-          <div class="detalle-evento">
-            <h3>HTML5,CSS3 Y Javascript</h3>
-            <p><i class="fa fa-clock-o" aria-hidden="true"></i>16:00 hrs</p>
-            <p><i class="fa fa-calendar" aria-hidden="true"></i>2 de Noviembre</p>
-            <p><i class="fa fa-user" aria-hidden="true"></i>Ilse Centeno</p>
-          </div>
-          <div class="detalle-evento">
-            <h3>Responsive design</h3>
-            <p><i class="fa fa-clock-o" aria-hidden="true"></i>20:00 hrs</p>
-            <p><i class="fa fa-calendar" aria-hidden="true"></i>2 de Noviembre</p>
-            <p><i class="fa fa-user" aria-hidden="true"></i>Montse Armas</p>
-          </div>
-          <a href="" class="button float-right">Ver todos</a>
+        </section><!-- programa -->
 
-
-        </div>
 
 
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
