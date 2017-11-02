@@ -54,6 +54,31 @@ h2::after{
   width: 100px;
   display: block;
 }
+h3{
+  font-size: 1.8em;
+  color: #fe4918;
+  font-family: 'PT Sans', sans-serif;
+  margin: 0;
+}
+.button{
+  background-color: #fe4918;
+  padding: 10px 40px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+  font-size: 1em;
+  margin-top: 20px;
+  display: inline-block;
+  transition: all .3s ease;
+}
+.button:hover{
+  background-color: #e33000;
+}
+.float-right{
+  float: right;
+}
 /*Header*/
 .hero {
   background-image: url("../img/encabezado.jpg");
@@ -239,7 +264,6 @@ div.programa-evento{
   background-color: rgba(255,255,255,.8);
   padding: 15px;
   margin-top: 150px;
-  margin-left: 50px;
 }
 @media only screen and (min-width: 768px){
   div.programa-evento{
@@ -276,9 +300,25 @@ nav.menu-programa a {
     display: table-cell;
   }
 }
-nav.menu-programa a i {
+nav.menu-programa a i,
+div.detalle-evento p i{
  color: #fe4918;
  font-size: 1.6em;
  margin-right: 10px;
 }
+/*detalle evento*/
+div.detalle-evento{
+  margin-top: 20px;
+  border-bottom: 1px solid black;
+  padding: 0 20px;
+
+}
+div.detalle-evento:nth-child(2){
+  border: none;
+}
+display: .detalle evento; p{
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
 /*# sourceMappingURL=main.css.map */
